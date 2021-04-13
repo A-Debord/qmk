@@ -2,5 +2,5 @@
 
 enum {
     ESC_TAB,
-    LSFT_LCK
+    LSFT_CPS
 };
