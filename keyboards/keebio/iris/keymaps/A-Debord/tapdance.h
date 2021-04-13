@@ -3,6 +3,7 @@
 enum {
     ESC_TAB,
     LSFT_CPS,
-    TD_LOWER,
-    TD_RAISE
+    TD_RAISE,
+    TD_RBRACE,
+    TD_LBRACE
 };
