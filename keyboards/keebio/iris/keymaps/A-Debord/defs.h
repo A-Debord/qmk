@@ -2,6 +2,7 @@
 #define DEFS_H
 #include "quantum.h"
 
+
 // keymap
 
 enum keyboard_keycodes {
@@ -19,7 +20,6 @@ enum keyboard_keycodes {
 // tapdance
 
 enum {
-    ESC_TAB,
     LSFT_CPS,
     RAISE_WIN,
     RBRACES,

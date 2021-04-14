@@ -19,5 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define USE_I2C
 #define EE_HANDS
+
+// tap dance
 #define TAPPING_TERM 200
+
+// combos
 #define COMBO_COUNT 2 // number of combos
+
+// dynamic macros
+#define DYNAMIC_MACRO_NO_NESTING

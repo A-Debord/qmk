@@ -73,8 +73,8 @@ void upper_reset(qk_tap_dance_state_t *state, void *user_data) {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
     // [ESC_TAB]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB,KC_ESC),
-    [LSFT_CPS] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT,KC_CAPS),
+    [LSFT_CPS]  = ACTION_TAP_DANCE_DOUBLE(KC_LSFT,KC_CAPS),
     [RAISE_WIN] = ACTION_TAP_DANCE_FN_ADVANCED(upper_each, upper_finished, upper_reset),
-    [RBRACES] = ACTION_TAP_DANCE_TRIPLE(KC_RPRN, KC_RCBR, KC_RBRACKET),
-    [LBRACES] = ACTION_TAP_DANCE_TRIPLE(KC_LPRN, KC_LCBR, KC_LBRACKET)
+    [RBRACES]   = ACTION_TAP_DANCE_TRIPLE(KC_RPRN, KC_RCBR, KC_RBRACKET),
+    [LBRACES]   = ACTION_TAP_DANCE_TRIPLE(KC_LPRN, KC_LCBR, KC_LBRACKET),
 };
