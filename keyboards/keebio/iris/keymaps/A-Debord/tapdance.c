@@ -1,5 +1,4 @@
-#include "keymap.h"
-#include "tapdance.h"
+#include "defs.h"
 #include "quantum.h"
 
 typedef enum {
@@ -74,9 +73,9 @@ void upper_reset(qk_tap_dance_state_t *state, void *user_data) {
 }
 
 qk_tap_dance_action_t tap_dance_actions[] = {
-    [ESC_TAB]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB,KC_ESC),
+    // [ESC_TAB]  = ACTION_TAP_DANCE_DOUBLE(KC_TAB,KC_ESC),
     [LSFT_CPS] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT,KC_CAPS),
-    [TD_RAISE] = ACTION_TAP_DANCE_FN_ADVANCED(upper_each, upper_finished, upper_reset),
-    [TD_RBRACE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, rbrace_finished, NULL),
-    [TD_LBRACE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lbrace_finished, NULL)
+    [RAISE_WIN] = ACTION_TAP_DANCE_FN_ADVANCED(upper_each, upper_finished, upper_reset),
+    [RBRACES] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, rbrace_finished, NULL),
+    [LBRACES] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, lbrace_finished, NULL)
 };

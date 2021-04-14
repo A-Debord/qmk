@@ -1,21 +1,20 @@
 
 #include QMK_KEYBOARD_H
-#include "keymap.h"
-#include "tapdance.h"
+#include "defs.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-     _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, KC_BSPC,
+     KC_ESC,  _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
- TD(ESC_TAB), KC_A,    KC_Z,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
+     KC_TAB,  KC_A,    KC_Z,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LCTL, KC_Q,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_M,    KC_SCLN,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
- TD(LSFT_CPS),KC_W,    KC_X,    KC_C,    KC_V,    KC_B,  TD(TD_LBRACE),  TD(TD_RBRACE), KC_N,  KC_EQL,  KC_MINS, KC_COMM, KC_DOT,  _______,
+ TD(LSFT_CPS),KC_W,    KC_X,    KC_C,    KC_V,    KC_B,  TD(LBRACES),  TD(RBRACES), KC_N,  KC_EQL,  KC_MINS, KC_COMM, KC_DOT,  KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_LALT, LOWER,   KC_ENT,                    KC_SPC,  TD(TD_RAISE),   KC_RWIN
+                                    KC_LALT, LOWER,   KC_ENT,                    KC_SPC,  TD(RAISE_WIN),   KC_RWIN
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
