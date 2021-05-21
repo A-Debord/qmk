@@ -65,9 +65,9 @@ void upper_finished(qk_tap_dance_state_t *state, void *user_data) {
 
 void upper_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch (Raise) {
-        case TD_SINGLE_HOLD: layer_off(_RAISE); break;
-        case TD_DOUBLE_HOLD: layer_off(_RAISE); unregister_mods(MOD_BIT(KC_RWIN)); break;
+        case TD_DOUBLE_HOLD: unregister_mods(MOD_BIT(KC_RWIN)); break;
     }
+    layer_off(_RAISE);
     Raise = TD_NONE;
 }
 

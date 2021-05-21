@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LCTL, KC_Q,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_M,    KC_SCLN,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
- TD(LSFT_CPS),KC_W,    KC_X,    KC_C,    KC_V,    KC_B,  TD(LBRACES),      TD(RBRACES), KC_N,  KC_EQL,  KC_MINS, KC_COMM, KC_DOT,  KC_RSFT,
+ TD(LSFT_CPS),KC_W,    KC_X,    KC_C,    KC_V,    KC_B,  TD(LBRACES),      TD(RBRACES),KC_EQL, KC_N,    KC_MINS, KC_COMM, KC_DOT,  KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     KC_LALT, LOWER,   KC_ENT,                    KC_SPC,TD(RAISE_WIN),KC_RWIN
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -22,13 +22,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      _______, _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_PGUP,
+     _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, XXXXXXX,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, KC_VOLU, KC_QUOT, KC_SLSH, KC_LT,                              KC_GT,   KC_BSLS, KC_GRV,  KC_TILD, KC_PIPE, XXXXXXX,
+     _______, XXXXXXX, KC_VOLU, KC_QUOT, KC_SLSH, KC_LT,                              KC_GT,   KC_BSLS, KC_GRV,  KC_TILD, KC_PIPE, KC_COLN,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     _______, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     _______, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, KC_PLUS, XXXXXXX, KC_UNDS, XXXXXXX, XXXXXXX, XXXXXXX,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    _______, _______, _______,                   _______,  _______, _______
+                                    _______, _______, _______,                   _______,  _______, KC_APP
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
