@@ -28,3 +28,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // dynamic macros
 #define DYNAMIC_MACRO_NO_NESTING
+// putting more overwrites the eeprom...
+#define DYNAMIC_MACRO_SIZE 256
