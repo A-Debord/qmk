@@ -22,6 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // tap dance
 #define TAPPING_TERM 200
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM_PER_KEY
 
 // combos
 #define COMBO_COUNT 2 // number of combos
