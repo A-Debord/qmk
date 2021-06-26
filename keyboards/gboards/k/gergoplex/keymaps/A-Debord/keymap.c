@@ -15,19 +15,19 @@
 
 // Tap Dance declarations
 enum {
-    TD_RPRN_BR,
-    TD_LPRN_BR,
-    TD_RBRC_GRT,
-    TD_LBRC_LES,
+    TD_RP,
+    TD_LP,
+    TD_RB,
+    TD_LB,
 };
 
 // Tap Dance definitions
 qk_tap_dance_action_t tap_dance_actions[] = {
     // Tap once for Escape, twice for Caps Lock
-    [TD_RPRN_BR] = ACTION_TAP_DANCE_DOUBLE(KC_RPRN, KC_RCBR),
-    [TD_LPRN_BR] = ACTION_TAP_DANCE_DOUBLE(KC_LPRN, KC_LCBR),
-    [TD_LBRC_LES]= ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_LT),
-    [TD_RBRC_GRT]= ACTION_TAP_DANCE_DOUBLE(KC_RBRC, KC_GT),
+    [TD_RP] = ACTION_TAP_DANCE_DOUBLE(KC_RPRN, KC_RCBR),
+    [TD_LP] = ACTION_TAP_DANCE_DOUBLE(KC_LPRN, KC_LCBR),
+    [TD_LB]= ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_LT),
+    [TD_RB]= ACTION_TAP_DANCE_DOUBLE(KC_RBRC, KC_GT),
 };
 
 /* Combomap
@@ -76,9 +76,9 @@ MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT),
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_EXLM, KC_AT,   KC_HASH, KC_DLR, KC_PERC,      KC_CIRC,  KC_AMPR, KC_ASTR, KC_BSLS,KC_TILD,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_LCTL,KC_HASH), XXXXXXX, KC_DQT, KC_GRV, TD_RPRN_BR,  TD_LPRN_BR, KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
+MT(MOD_LCTL,KC_HASH), XXXXXXX, KC_DQT, KC_GRV, TD(TD_RP),  TD(TD_LP), KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD_LBRC_LES, TD_RBRC_GRT, KC_QUES,  XXXXXXX, XXXXXXX,  MT(MOD_RSFT, KC_COLN),
+MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  XXXXXXX, XXXXXXX,  MT(MOD_RSFT, KC_COLN),
         //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
              _______, _______, _______,                                       KC_EQL,  KC_SCLN, _______
         //  └────────┴───────┴────────┘                                      └────────┴────────┴────────┘
