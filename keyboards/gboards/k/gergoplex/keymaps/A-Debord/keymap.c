@@ -78,9 +78,9 @@ MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
 MT(MOD_LCTL,KC_HASH), XXXXXXX, KC_DQT, KC_GRV, TD(TD_RP),  TD(TD_LP), KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  XXXXXXX, XXXXXXX,  MT(MOD_RSFT, KC_COLN),
+MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  KC_COLN, XXXXXXX, KC_RSFT,
         //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
-             _______, _______, _______,                                       KC_EQL,  KC_SCLN, _______
+             _______, _______, _______,                                       KC_EQL,  _______, _______
         //  └────────┴───────┴────────┘                                      └────────┴────────┴────────┘
     ),
 /* Keymap 2: Pad/Function layer*/
