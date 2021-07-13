@@ -88,7 +88,7 @@ MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_1,    KC_2,    KC_3,    KC_4,    KC_5,         KC_6,    KC_7,    KC_8, 	KC_9, 	 KC_0,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_LCTL,KC_F11), KC_HOME, KC_PGUP, KC_PGDN, KC_END,      KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT,MT(MOD_RCTL,KC_F12),
+MT(MOD_LCTL,KC_HOME),KC_PGUP, KC_PGDN, KC_END, KC_F11,       KC_F12,  KC_LEFT, KC_UP,   KC_DOWN, MT(MOD_RCTL,KC_RGHT),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
 MT(MOD_RSFT,KC_F1), KC_F2,   KC_F3,   KC_F4,   KC_F5,        KC_F6,   KC_F7,   KC_F8,   KC_F9,   MT(MOD_RSFT,KC_F10),
         //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
