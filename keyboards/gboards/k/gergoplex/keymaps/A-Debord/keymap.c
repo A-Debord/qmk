@@ -76,10 +76,10 @@ MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT),
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_EXLM, KC_AT,   KC_HASH, KC_DLR, KC_PERC,      KC_CIRC,  KC_AMPR, KC_ASTR, KC_BSLS,KC_TILD,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_LCTL,KC_HASH), KC_VOLU, KC_DQT, KC_GRV, TD(TD_LP),  TD(TD_RP), KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
+MT(MOD_LCTL,KC_HASH), KC_VOLU, KC_DQT,TD(TD_LB),TD(TD_LP),  TD(TD_RP),TD(TD_RB),KC_MINS, KC_UNDS, MT(MOD_RCTL,KC_PIPE),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_RSFT,KC_PERC), KC_VOLD, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  KC_COLN, XXXXXXX, KC_RSFT,
-        //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
+MT(MOD_RSFT,KC_PERC), KC_VOLD,DM_REC1,DM_PLY1, DM_RSTP,      KC_GRV,  KC_QUES, KC_COLN, XXXXXXX, KC_RSFT,
+        //└─┬──────┴─┬──────┴┬───────┴┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
              _______, _______, _______,                                       KC_EQL,  _______, _______
         //  └────────┴───────┴────────┘                                      └────────┴────────┴────────┘
     ),

@@ -3,14 +3,15 @@
 # Make sure you have dfu-programmer installed!
 #----------------------------------------------------------------------------
 # Firmware options
-MOUSEKEY_ENABLE = yes
+MOUSEKEY_ENABLE = no
+TAP_DANCE_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes
 
 #Debug options
 VERBOSE = yes
 DEBUG_MATRIX_SCAN_RATE = no
-DEBUG_MATRIX = yes
-CONSOLE_ENABLE = yes
-TAP_DANCE_ENABLE = yes
+DEBUG_MATRIX = no
+CONSOLE_ENABLE = no
 
 #Combos!
 VPATH += keyboards/gboards/
