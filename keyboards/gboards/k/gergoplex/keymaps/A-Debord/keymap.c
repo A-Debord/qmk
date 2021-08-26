@@ -76,11 +76,11 @@ MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT),
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_EXLM, KC_AT,   KC_HASH, KC_DLR, KC_PERC,      KC_CIRC,  KC_AMPR, KC_ASTR, KC_BSLS,KC_TILD,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_LCTL,KC_HASH), XXXXXXX, KC_DQT, KC_GRV, TD(TD_RP),  TD(TD_LP), KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
+MT(MOD_LCTL,KC_HASH), KC_VOLU, KC_DQT, KC_GRV, TD(TD_LP),  TD(TD_RP), KC_MINS, KC_UNDS, XXXXXXX, MT(MOD_RCTL,KC_PIPE),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  XXXXXXX, XXXXXXX,  MT(MOD_RSFT, KC_COLN),
+MT(MOD_RSFT,KC_PERC), KC_VOLD, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  KC_COLN, XXXXXXX, KC_RSFT,
         //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
-             _______, _______, _______,                                       KC_EQL,  KC_SCLN, _______
+             _______, _______, _______,                                       KC_EQL,  _______, _______
         //  └────────┴───────┴────────┘                                      └────────┴────────┴────────┘
     ),
 /* Keymap 2: Pad/Function layer*/
@@ -88,11 +88,11 @@ MT(MOD_RSFT,KC_PERC), XXXXXXX, XXXXXXX, XXXXXXX,TD(TD_LB), TD(TD_RB), KC_QUES,  
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_1,    KC_2,    KC_3,    KC_4,    KC_5,         KC_6,    KC_7,    KC_8, 	KC_9, 	 KC_0,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-           KC_LCTL, KC_HOME, KC_PGUP, KC_PGDN, KC_END,      KC_LEFT, KC_UP,   KC_DOWN, KC_RGHT, KC_RCTL,
+MT(MOD_LCTL,KC_HOME),KC_PGUP, KC_PGDN, KC_END, KC_F11,       KC_F12,  KC_LEFT, KC_UP,   KC_DOWN, MT(MOD_RCTL,KC_RGHT),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
 MT(MOD_RSFT,KC_F1), KC_F2,   KC_F3,   KC_F4,   KC_F5,        KC_F6,   KC_F7,   KC_F8,   KC_F9,   MT(MOD_RSFT,KC_F10),
         //└─┬──────┴─┬──────┴┬────┴───┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
-             KC_F11,  KC_F12, _______,  	                                  _______, KC_MPLY, KC_MNXT
+             _______, _______,C(KC_PIPE),  	                                  _______, KC_MPLY, KC_MNXT
         //  └────────┴───────┴────────┘                                      └────────┴────────┴────────┘
     )
 };
