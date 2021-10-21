@@ -26,8 +26,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     // Tap once for Escape, twice for Caps Lock
     [TD_RP] = ACTION_TAP_DANCE_DOUBLE(KC_RPRN, KC_RCBR),
     [TD_LP] = ACTION_TAP_DANCE_DOUBLE(KC_LPRN, KC_LCBR),
-    [TD_LB]= ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_LT),
-    [TD_RB]= ACTION_TAP_DANCE_DOUBLE(KC_RBRC, KC_GT),
+    // [TD_LB]= ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_LT),
+    // [TD_RB]= ACTION_TAP_DANCE_DOUBLE(KC_RBRC, KC_GT),
 };
 
 /* Combomap
@@ -76,7 +76,7 @@ MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT),
         //┌────────┬────────┬────────┬────────┬────────┐    ┌────────┬────────┬────────┬────────┬────────┐
            KC_EXLM, KC_AT,   KC_HASH, KC_DLR, KC_PERC,      KC_CIRC,  KC_AMPR, KC_ASTR, KC_BSLS,KC_TILD,
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
-MT(MOD_LCTL,KC_HASH), KC_VOLU, KC_DQT,TD(TD_LB),TD(TD_LP),  TD(TD_RP),TD(TD_RB),KC_MINS, KC_UNDS, MT(MOD_RCTL,KC_PIPE),
+MT(MOD_LCTL,KC_HASH), KC_VOLU, KC_DQT,KC_LBRC ,TD(TD_LP),  TD(TD_RP),KC_LBRC ,KC_MINS, KC_UNDS, MT(MOD_RCTL,KC_PIPE),
         //├────────┼────────┼────────┼────────┼────────┤    ├────────┼────────┼────────┼────────┼────────┤
 MT(MOD_RSFT,KC_PERC), KC_VOLD,DM_REC1,DM_PLY1, DM_RSTP,      KC_GRV,  KC_QUES, KC_COLN, XXXXXXX, KC_RSFT,
         //└─┬──────┴─┬──────┴┬───────┴┬───────┴────────┘    └────────┴───────┬┴───────┬┴───────┬┴───────┬┘
