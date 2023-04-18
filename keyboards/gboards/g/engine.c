@@ -56,7 +56,7 @@ int8_t mousePress;
 uint16_t oldStick=0;
 
 // All processing done at chordUp goes through here
-void processKeysUp() {
+void processKeysUp(void) {
     // Check for mousekeys, this is release
 #ifdef MOUSEKEY_ENABLE
     if (inMouse) {
@@ -380,7 +380,7 @@ void saveState(C_SIZE cleanChord) {
     pChordIndex = chordIndex;
     for (int i = 0; i < 32; i++) pChordState[i] = chordState[i];
 }
-void restoreState() {
+void restoreState(void) {
     cChord     = pChord;
     chordIndex = pChordIndex;
     for (int i = 0; i < 32; i++) chordState[i] = pChordState[i];
