@@ -2,5 +2,7 @@
 #define COMBO_VARIABLE_LEN
 
 #undef TAPPING_TERM 
-#define TAPPING_TERM 170
-#define PERMISSIVE_HOLD // mod_down k_down k_up mod_up < tap term => no hold
+#define TAPPING_TERM 150
+#define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS

@@ -8,3 +8,6 @@ COMB(opBspc,     KC_BSPC,         KC_O, KC_P)
 COMB(sdDel,      KC_DEL,          KC_S, KC_D)
 COMB(klTab,      KC_BSPC,         KC_K, KC_L)
 COMB(dfTab,      KC_TAB,          KC_D, KC_F)
+
+COMB(fgLT,      KC_LT,          KC_G, KC_F)
+COMB(hjGT,      KC_GT,          KC_H, KC_J)
