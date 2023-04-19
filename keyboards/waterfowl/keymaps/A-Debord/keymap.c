@@ -63,9 +63,9 @@ MT(MOD_LCTL,KC_Q), KC_S,   KC_D,	KC_F,	KC_G,		   KC_H,	KC_J,	KC_K,	  KC_L,	  MT(
 MT(MOD_LSFT, KC_W), KC_X,	KC_C,	KC_V,	KC_B,		  KC_SLSH,	KC_N,	KC_SCLN, KC_COMM, MT(MOD_RSFT,KC_DOT ),
     //└─┬──────┴─┬──────┴┬────┴───┬────────────────┘    └────────┴────────┴───────┬┴───────┬┴───┬───┬┘
     //  |ESC/META|  ALT  |ENTER(SYM)|                                             |SPC(NUM)|DEL |TAB|
-XXXXXXX,	MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT), 				
-                                        XXXXXXX,		XXXXXXX,	
-                                                                        LT(NUMB, KC_SPC), KC_DEL, KC_TAB,		XXXXXXX
+KC_BTN2,	MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT), 				
+                                        KC_ACL1 ,		KC_BTN1,	
+                                                                        LT(NUMB, KC_SPC), KC_DEL, KC_TAB,		KC_BTN1
 ),
 
 /* SYM

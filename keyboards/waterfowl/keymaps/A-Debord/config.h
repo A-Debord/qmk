@@ -35,5 +35,13 @@
 #define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
 
+// dynamic macros
 #define DYNAMIC_MACRO_NO_NESTING
 #define DYNAMIC_MACRO_SIZE 64
+
+// mousekeys
+#define MK_3_SPEED // constant
+#define MK_MOMENTARY_ACCEL
+
+#define MK_C_OFFSET_UNMOD 64
+#define MK_C_OFFSET_1 16
