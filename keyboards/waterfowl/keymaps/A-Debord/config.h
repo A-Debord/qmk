@@ -28,5 +28,9 @@
 #define SPLIT_WPM_ENABLE
 #define SPLIT_USB_DETECT
 
+// combos
+#define COMBO_VARIABLE_LEN
+
 // Tapping term
 #define TAPPING_TERM 200
+#define IGNORE_MOD_TAP_INTERRUPT

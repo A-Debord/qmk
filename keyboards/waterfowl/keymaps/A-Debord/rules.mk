@@ -3,7 +3,6 @@
 #
 BOOTLOADER = caterina
 
-BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
@@ -18,3 +17,12 @@ OLED_DRIVER = SSD1306    # Specifies the type of OLED
 SPLIT_KEYBOARD = yes     # Enables split functionality
 ENCODER_ENABLE = yes	 # Enables the encoders
 MOUSEKEY_ENABLE = yes    # Enables mouse movements
+
+TAP_DANCE_ENABLE = yes      # enable multitaps
+COMBO_ENABLE = yes 			# enable combos (chords)
+VPATH += keyboards/gboards  # using .def for combos
+DYNAMIC_MACRO_ENABLE = yes  # record/replay macros
+
+# exe size reduction
+DEBUG_MATRIX_SCAN_RATE = no
+DEBUG_MATRIX = no
