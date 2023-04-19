@@ -21,8 +21,6 @@ MOUSEKEY_ENABLE = yes    # Enables mouse movements
 TAP_DANCE_ENABLE = yes      # enable multitaps
 COMBO_ENABLE = yes 			# enable combos (chords)
 VPATH += keyboards/gboards  # using .def for combos
-DYNAMIC_MACRO_ENABLE = yes  # record/replay macros
+# DYNAMIC_MACRO_ENABLE = yes  # record/replay macros
 
-# exe size reduction
-DEBUG_MATRIX_SCAN_RATE = no
-DEBUG_MATRIX = no
+LTO_ENABLE = yes 			# reduce exe size

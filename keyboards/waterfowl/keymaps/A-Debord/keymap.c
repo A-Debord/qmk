@@ -63,9 +63,9 @@ MT(MOD_LCTL,KC_Q), KC_S,   KC_D,	KC_F,	KC_G,		   KC_H,	KC_J,	KC_K,	  KC_L,	  MT(
 MT(MOD_LSFT, KC_W), KC_X,	KC_C,	KC_V,	KC_B,		  KC_SLSH,	KC_N,	KC_SCLN, KC_COMM, MT(MOD_RSFT,KC_DOT ),
     //└─┬──────┴─┬──────┴┬────┴───┬────────────────┘    └────────┴────────┴───────┬┴───────┬┴───┬───┬┘
     //  |ESC/META|  ALT  |ENTER(SYM)|                                             |SPC(NUM)|DEL |TAB|
-KC_1,	MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT), 				
-                                        KC_CAPS,		KC_NUM,	
-                                                                        LT(NUMB, KC_SPC), KC_DEL, KC_TAB,		KC_4
+XXXXXXX,	MT(MOD_LGUI, KC_ESC), MT(MOD_LALT,KC_QUOT), LT(SYMB, KC_ENT), 				
+                                        XXXXXXX,		XXXXXXX,	
+                                                                        LT(NUMB, KC_SPC), KC_DEL, KC_TAB,		XXXXXXX
 ),
 
 /* SYM
@@ -122,29 +122,35 @@ _______,     _______, _______,C(KC_PIPE),  	   _______,_______,               __
 
 
 #ifdef ENCODER_ENABLE
+
+#define LROLLER 0
+#define LENCODER 1
+#define RROLLER 2
+#define RENCODER 3
+
 bool encoder_update_kb(uint8_t index, bool clockwise) {
     if (!encoder_update_user(index, clockwise)) {
         return false; 
     }
-    if (index == 0) { // Left roller
+    if (index == RROLLER) {
         if (clockwise) {
             tap_code(KC_MS_WH_DOWN);
         } else {
             tap_code(KC_MS_WH_UP);
         }
-    } else if (index == 1) { // Left encoder
+    } else if (index == RENCODER) {
         if (clockwise) {
 			tap_code(KC_MS_UP);
         } else {
             tap_code(KC_MS_DOWN);
         }
-    } else if (index == 2) { // Right roller
+    } else if (index == LROLLER) {
         if (clockwise) {
             tap_code16(S(KC_MS_WH_DOWN));
         } else {
             tap_code16(S(KC_MS_WH_UP));
         }
-    } else if (index == 3) { // Right encoder
+    } else if (index == LENCODER) {
         if (clockwise) {
             tap_code(KC_MS_RIGHT);
         } else {

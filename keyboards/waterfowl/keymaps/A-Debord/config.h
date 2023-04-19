@@ -34,3 +34,6 @@
 // Tapping term
 #define TAPPING_TERM 200
 #define IGNORE_MOD_TAP_INTERRUPT
+
+#define DYNAMIC_MACRO_NO_NESTING
+#define DYNAMIC_MACRO_SIZE 64
