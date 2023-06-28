@@ -140,9 +140,9 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         }
     } else if (index == RENCODER) {
         if (clockwise) {
-			tap_code(KC_MS_UP);
-        } else {
             tap_code(KC_MS_DOWN);
+        } else {
+			tap_code(KC_MS_UP);
         }
     } else if (index == LROLLER) {
         if (clockwise) {
@@ -267,3 +267,13 @@ bool oled_task_kb(void) {
     return true;
 }
 #endif
+
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case TD(TD_LP):
+        case TD(TD_RP):
+            return 175;
+        default:
+            return TAPPING_TERM;
+    }
+}

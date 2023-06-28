@@ -27,13 +27,16 @@
 #define SPLIT_MODS_ENABLE
 #define SPLIT_WPM_ENABLE
 #define SPLIT_USB_DETECT
+#define SPLIT_WATCHDOG_ENABLE
 
 // combos
 #define COMBO_VARIABLE_LEN
 
-// Tapping term
-#define TAPPING_TERM 200
+// tap hold
 #define IGNORE_MOD_TAP_INTERRUPT
+#undef TAPPING_TERM 
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
 
 // dynamic macros
 #define DYNAMIC_MACRO_NO_NESTING
