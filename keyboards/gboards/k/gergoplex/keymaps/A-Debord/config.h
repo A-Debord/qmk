@@ -6,3 +6,6 @@
 #define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD
 #define HOLD_ON_OTHER_KEY_PRESS
+
+#undef DEBOUNCE
+#define DEBOUNCE 15
